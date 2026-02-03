@@ -1,0 +1,65 @@
+/* ============ VARIABLES ============ */
+:root {
+  /* Design tokens (Figma: Interior Landing Page) */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #0d9488;
+  --color-primary-dark: #0f766e;
+  --color-accent: #f59e0b;
+  --color-bg-dark: #1e293b;
+  --color-bg-card: #334155;
+  --color-text: #f8fafc;
+  --color-text-muted: #94a3b8;
+
+  --font-poppins: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --font-montserrat: "Montserrat", "Segoe UI", system-ui, sans-serif;
+
+  --header-height: 100px;
+  --container-max: 1332px;
+  --container-px: 54px;
+  --nav-gap: 5px;
+  --nav-font-size: 16px;
+  --nav-font-weight: 500;
+  --brand-font-size: 34px;
+  --brand-font-weight: 700;
+  --icon-size: 28px;
+
+  /* Hero (Figma 117:357) */
+  --color-hero-primary: #b88e2f;
+  --color-hero-card: #fff3e3;
+  --color-font: #333333;
+  --hero-height: 716.83px;
+  --hero-card-width: 643px;
+  --hero-card-radius: 10px;
+  --hero-heading-size: 52px;
+  --hero-body-size: 18px;
+  --hero-btn-padding: 25px 72px;
+
+  /* Browse The Range (Figma 117:371) */
+  --browse-title-size: 32px;
+  --browse-desc-size: 20px;
+  --browse-label-size: 24px;
+  --browse-card-width: 381px;
+  --browse-card-height: 480px;
+  --browse-card-gap: 20px;
+  --browse-desc-color: #666666;
+
+  /* Our Products (Figma 117:394) */
+  --products-title-size: 40px;
+  --products-card-width: 285px;
+  --products-card-height: 446px;
+  --products-card-img-height: 301px;
+  --products-gap: 32px;
+  --products-bg: #f4f5f7;
+  --products-price-size: 20px;
+  --products-name-size: 24px;
+  --products-desc-size: 16px;
+  --products-gray-1: #3a3a3a;
+  --products-gray-3: #898989;
+  --products-gray-4: #b0b0b0;
+  --products-red-accent: #e97171;
+  --products-green-accent: #2ec1ac;
+  --products-btn-border: var(--color-hero-primary);
+  --products-btn-width: 245px;
+  --products-btn-height: 48px;
+}

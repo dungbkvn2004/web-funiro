@@ -1,0 +1,8 @@
+/* ============ BASE ============ */
+body {
+  font-family: var(--font-poppins);
+  background: linear-gradient(135deg, #0f172a 0%, var(--color-bg-dark) 100%);
+  color: var(--color-text);
+  min-height: 100vh;
+  line-height: 1.6;
+}

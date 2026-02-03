@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox & Grid Demo | Furniro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header (Figma 117:337 - Interior Landing Page) -->
+    <header class="header u-bg-white">
+      <div class="u-container header__inner">
+        <a href="#" class="header__brand u-no-underline u-text-dark">
+          <img
+            class="header__logo"
+            src="img/logo-furniro.png"
+            width="50"
+            height="32"
+            alt="Furniro"
+          />
+          <span class="header__brand-name">Furniro</span>
+        </a>
+
+        <nav class="header__nav">
+          <a href="#" class="header__nav-link">Home</a>
+          <a href="#" class="header__nav-link">Shop</a>
+          <a href="#" class="header__nav-link">About</a>
+          <a href="#" class="header__nav-link">Contact</a>
+        </nav>
+
+        <div class="header__actions">
+          <a href="#" class="header__icon-link" aria-label="Account">
+            <img src="img/icon-account.svg" width="28" height="28" alt="" />
+          </a>
+          <a href="#" class="header__icon-link" aria-label="Search">
+            <img src="img/icon-search.svg" width="28" height="28" alt="" />
+          </a>
+          <a href="#" class="header__icon-link" aria-label="Wishlist">
+            <img src="img/icon-heart.svg" width="28" height="28" alt="" />
+          </a>
+          <a href="#" class="header__icon-link" aria-label="Cart">
+            <img src="img/icon-cart.svg" width="28" height="28" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero (Figma 117:357 - Mask Group) -->
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__card">
+          <p class="hero__label">New Arrival</p>
+          <h2 class="hero__title">Discover Our New Collection</h2>
+          <p class="hero__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis.
+          </p>
+          <a href="#" class="hero__btn">BUY Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Browse The Range (Figma 117:371) -->
+    <section class="browse u-bg-white">
+      <div class="u-container browse__inner">
+        <header class="browse__header">
+          <h2 class="browse__title">Browse The Range</h2>
+          <p class="browse__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </header>
+        <div class="browse__grid">
+          <a href="#" class="browse__card">
+            <div class="browse__img-wrap">
+              <img
+                class="browse__img"
+                src="https://picsum.photos/381/480?random=1"
+                width="381"
+                height="480"
+                alt="Living room"
+              />
+            </div>
+            <span class="browse__label">Living</span>
+          </a>
+          <a href="#" class="browse__card">
+            <div class="browse__img-wrap">
+              <img
+                class="browse__img"
+                src="https://picsum.photos/381/480?random=2"
+                width="381"
+                height="480"
+                alt="Dining"
+              />
+            </div>
+            <span class="browse__label">Dining</span>
+          </a>
+          <a href="#" class="browse__card">
+            <div class="browse__img-wrap">
+              <img
+                class="browse__img"
+                src="https://picsum.photos/381/480?random=3"
+                width="381"
+                height="480"
+                alt="Bedroom"
+              />
+            </div>
+            <span class="browse__label">Bedroom</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Products (Figma 117:394) -->
+    <section class="products u-bg-white">
+      <div class="u-container products__inner">
+        <h2 class="products__title">Our Products</h2>
+        <div class="products__grid">
+          <article class="products__card">
+            <a href="#" class="products__link">
+              <div class="products__img-wrap">
+                <img
+                  class="products__img"
+                  src="https://picsum.photos/285/301?random=10"
+                  width="285"
+                  height="301"
+                  alt="Syltherine"
+                />
+              </div>
+              <div class="products__body">
+                <div class="products__prices">
+                  <span class="products__price">Rp 2.500.000</span>
+                  <span class="products__price products__price--old"
+                    >Rp 3.500.000</span
+                  >
+                </div>
+                <h3 class="products__name">Syltherine</h3>
+                <p class="products__desc">Stylish cafe chair</p>
+              </div>
+            </a>
+            <div class="products__hover" aria-hidden="true">
+              <button type="button" class="products__hover-btn">
+                Add to cart
+              </button>
+              <div class="products__hover-actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+            <span class="products__badge products__badge--sale">-30%</span>
+          </article>
+          <article class="products__card">
+            <a href="#" class="products__link">
+              <div class="products__img-wrap">
+                <img
+                  class="products__img"
+                  src="https://picsum.photos/285/301?random=11"
+                  width="285"
+                  height="301"
+                  alt="Leviosa"
+                />
+              </div>
+              <div class="products__body">
+                <div class="products__prices">
+                  <span class="products__price">Rp 2.500.000</span>
+                </div>
+                <h3 class="products__name">Leviosa</h3>
+                <p class="products__desc">Stylish cafe chair</p>
+              </div>
+            </a>
+            <div class="products__hover" aria-hidden="true">
+              <button type="button" class="products__hover-btn">
+                Add to cart
+              </button>
+              <div class="products__hover-actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+          </article>
+          <article class="products__card">
+            <a href="#" class="products__link">
+              <div class="products__img-wrap">
+                <img
+                  class="products__img"
+                  src="https://picsum.photos/285/301?random=12"
+                  width="285"
+                  height="301"
+                  alt="Lolito"
+                />
+              </div>
+              <div class="products__body">
+                <div class="products__prices">
+                  <span class="products__price">Rp 7.000.000</span>
+                  <span class="products__price products__price--old"
+                    >Rp 14.000.000</span
+                  >
+                </div>
+                <h3 class="products__name">Lolito</h3>
+                <p class="products__desc">Luxury big sofa</p>
+              </div>
+            </a>
+            <div class="products__hover" aria-hidden="true">
+              <button type="button" class="products__hover-btn">
+                Add to cart
+              </button>
+              <div class="products__hover-actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+            <span class="products__badge products__badge--sale">-50%</span>
+          </article>
+          <article class="products__card">
+            <a href="#" class="products__link">
+              <div class="products__img-wrap">
+                <img
+                  class="products__img"
+                  src="https://picsum.photos/285/301?random=13"
+                  width="285"
+                  height="301"
+                  alt="Respira"
+                />
+              </div>
+              <div class="products__body">
+                <div class="products__prices">
+                  <span class="products__price">Rp 500.000</span>
+                </div>
+                <h3 class="products__name">Respira</h3>
+                <p class="products__desc">Outdoor bar table and stool</p>
+              </div>
+            </a>
+            <div class="products__hover" aria-hidden="true">
+              <button type="button" class="products__hover-btn">
+                Add to cart
+              </button>
+              <div class="products__hover-actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+            <span class="products__badge products__badge--new">New</span>
+          </article>
+          <article class="products__card">
+            <a href="#" class="products__link">
+              <div class="products__img-wrap">
+                <img
+                  class="products__img"
+                  src="https://picsum.photos/285/301?random=14"
+                  width="285"
+                  height="301"
+                  alt="Grifo"
+                />
+              </div>
+              <div class="products__body">
+                <div class="products__prices">
+                  <span class="products__price">Rp 1.500.000</span>
+                </div>
+                <h3 class="products__name">Grifo</h3>
+                <p class="products__desc">Night lamp</p>
+              </div>
+            </a>
+            <div class="products__hover" aria-hidden="true">
+              <button type="button" class="products__hover-btn">
+                Add to cart
+              </button>
+              <div class="products__hover-actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+          </article>
+          <article class="products__card">
+            <a href="#" class="products__link">
+              <div class="products__img-wrap">
+                <img
+                  class="products__img"
+                  src="https://picsum.photos/285/301?random=15"
+                  width="285"
+                  height="301"
+                  alt="Muggo"
+                />
+              </div>
+              <div class="products__body">
+                <div class="products__prices">
+                  <span class="products__price">Rp 150.000</span>
+                </div>
+                <h3 class="products__name">Muggo</h3>
+                <p class="products__desc">Small mug</p>
+              </div>
+            </a>
+            <div class="products__hover" aria-hidden="true">
+              <button type="button" class="products__hover-btn">
+                Add to cart
+              </button>
+              <div class="products__hover-actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+            <span class="products__badge products__badge--new">New</span>
+          </article>
+          <article class="products__card">
+            <a href="#" class="products__link">
+              <div class="products__img-wrap">
+                <img
+                  class="products__img"
+                  src="https://picsum.photos/285/301?random=16"
+                  width="285"
+                  height="301"
+                  alt="Pingky"
+                />
+              </div>
+              <div class="products__body">
+                <div class="products__prices">
+                  <span class="products__price">Rp 7.000.000</span>
+                  <span class="products__price products__price--old"
+                    >Rp 14.000.000</span
+                  >
+                </div>
+                <h3 class="products__name">Pingky</h3>
+                <p class="products__desc">Cute bed set</p>
+              </div>
+            </a>
+            <div class="products__hover" aria-hidden="true">
+              <button type="button" class="products__hover-btn">
+                Add to cart
+              </button>
+              <div class="products__hover-actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+            <span class="products__badge products__badge--sale">-50%</span>
+          </article>
+          <article class="products__card">
+            <a href="#" class="products__link">
+              <div class="products__img-wrap">
+                <img
+                  class="products__img"
+                  src="https://picsum.photos/285/301?random=17"
+                  width="285"
+                  height="301"
+                  alt="Potty"
+                />
+              </div>
+              <div class="products__body">
+                <div class="products__prices">
+                  <span class="products__price">Rp 500.000</span>
+                </div>
+                <h3 class="products__name">Potty</h3>
+                <p class="products__desc">Minimalist flower pot</p>
+              </div>
+            </a>
+            <div class="products__hover" aria-hidden="true">
+              <button type="button" class="products__hover-btn">
+                Add to cart
+              </button>
+              <div class="products__hover-actions">
+                <span>Share</span>
+                <span>Compare</span>
+                <span>Like</span>
+              </div>
+            </div>
+            <span class="products__badge products__badge--new">New</span>
+          </article>
+        </div>
+        <div class="products__footer">
+          <a href="#" class="products__show-more">Show More</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
